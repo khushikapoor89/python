@@ -1,0 +1,868 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "abeae0cd",
+      "metadata": {
+        "id": "abeae0cd",
+        "outputId": "b5e42c57-765c-4e94-b37a-8fab7bbe977f"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[2, 3, 7, 9, 6]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.1) python program to interchange first and last elements in a list.\n",
+        "#ans.) = In this question we have to do interchange the number so we do specify the indexing and then interchange the number.\n",
+        "list1 = [6,3,7,9,2]\n",
+        "list1[0],list1[-1] = list1[-1],list1[0]\n",
+        "print(list1)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "376cd016",
+      "metadata": {
+        "id": "376cd016",
+        "outputId": "a1b74ccd-bee1-486c-eb4e-a0818b018482"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[4, 2, 3, 1, 5]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.2) python program to swap two elements in a list.\n",
+        "#ans.) firstly we will define the swap function and list and their postions then call the swap function and lastly print the list.\n",
+        "list2 = [1,2,3,4,5]\n",
+        "def swapthenumber(list2,pos1,pos2):\n",
+        "    list2[0],list2[3] = list2[3],list2[0]\n",
+        "swapthenumber(list2,0,3)\n",
+        "print(list2)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "772d1a03",
+      "metadata": {
+        "id": "772d1a03",
+        "outputId": "74c8c203-e218-49a2-89a3-47dd1cb26afe"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "['mayank', 'amit', 'vishal', 'dhruv']\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.3) Swap two elements in string list.\n",
+        "list3 = ['mayank','vishal','amit','dhruv']\n",
+        "def swap_the_names(list3,pos1,pos2):\n",
+        "    list3[1],list3[2]=list3[2],list3[1]\n",
+        "swap_the_names(list3,1,2)\n",
+        "print(list3)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "110923c9",
+      "metadata": {
+        "id": "110923c9",
+        "outputId": "c80166e4-b59d-41d6-816d-f1356eb6159f"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "7\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.4) Ways to find the length of list.\n",
+        "#ans.) There is many ways to find the list but we will see only two ways.\n",
+        "list4 = [1,2,3,4,5,6,7]\n",
+        "print(len(list4))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "7faeceab",
+      "metadata": {
+        "id": "7faeceab"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "cc2a62ab",
+      "metadata": {
+        "id": "cc2a62ab",
+        "outputId": "1501a10d-c341-4b82-81e8-8d321eb06b14"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "num1 is greater then num2\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.5)  maximum of two number:-\n",
+        "num1 = 4\n",
+        "num2 = 2\n",
+        "if  num1>num2:\n",
+        "    print(\"num1 is greater then num2\")\n",
+        "else:\n",
+        "    print(\"num2 is greater then num1\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4d169637",
+      "metadata": {
+        "id": "4d169637",
+        "outputId": "f6e1b98a-1ae0-4f0d-d35f-b4c470dcbd92"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "a is smaller then b\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.6)  minimum of two number:-\n",
+        "a = 2\n",
+        "b = 4\n",
+        "if a<b:\n",
+        "    print(\"a is smaller then b\")\n",
+        "else:\n",
+        "    print(\"b is smaller then a\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "7086cb00",
+      "metadata": {
+        "id": "7086cb00",
+        "outputId": "f76b7d43-3baa-4bd4-bd7a-b47233785cb0"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter the number=9\n",
+            "no this is not an element of this list\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.7) Ways to check if element exists in list.\n",
+        "list7 = [1,2,3,4,5,6]\n",
+        "num = int(input('enter the number='))\n",
+        "if num in list7:\n",
+        "    print(\"yes this is in list\")\n",
+        "else:\n",
+        "    print(\"no this is not an element of this list\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "816a5e59",
+      "metadata": {
+        "id": "816a5e59",
+        "outputId": "d3152c7e-0f38-42b2-be96-58833a3c521d"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.8) Way to clean the list.\n",
+        "list8 = [2,4,8,4,2,4,6]\n",
+        "list8.clear()\n",
+        "print(list8)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "6a182e78",
+      "metadata": {
+        "id": "6a182e78",
+        "outputId": "3ae1c03f-2961-4957-c5e2-eb043bcb218e"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[7, 6, 5, 4, 3, 2, 1]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.9) Reversing a list:-\n",
+        "list8 = [1,2,3,4,5,6,7]\n",
+        "list8.reverse()\n",
+        "print(list8)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4565057e",
+      "metadata": {
+        "id": "4565057e",
+        "outputId": "78796fa7-5c6c-45a1-8873-b4f45585b3c0"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[1, 2, 3, 4, 5, 6]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.10) Copying a list:-\n",
+        "list9 = [1,2,3,4,5,6]\n",
+        "list9a = list9.copy()\n",
+        "print(list9a)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "b1660522",
+      "metadata": {
+        "id": "b1660522",
+        "outputId": "6697d914-25f5-4121-8c7f-480184652d52"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter the number which you want of it occurence=4\n",
+            "the number 4 is 1 times in this list\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.11) Count occurences of an element in list:-\n",
+        "list11 = [3,6,3,1,5,7,8,8,9,6,4,3,5]\n",
+        "number = int(input('enter the number which you want of it occurence='))\n",
+        "counter = 0\n",
+        "for item in list11:\n",
+        "    if item == number:\n",
+        "        counter = counter + 1\n",
+        "print(\"the number\", number ,\"is\",counter, \"times in this list\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "228f31e3",
+      "metadata": {
+        "id": "228f31e3",
+        "outputId": "929859f5-a2cf-48c5-dfb3-167a0074df2a"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "the sum is = 375\n",
+            "the average is = 53.57142857142857\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.12) Program to find the sum and average of the elements of the list:-\n",
+        "list12 = [89,43,23,34,65,87,34]\n",
+        "list12a = sum(list12)\n",
+        "avg = list12a/7\n",
+        "print(\"the sum is =\",list12a)\n",
+        "print(\"the average is =\",avg)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4cc29c5d",
+      "metadata": {
+        "id": "4cc29c5d",
+        "outputId": "6bfa5f75-4395-49f1-9c5d-2d9cab26024e"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "25\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.13) Sum of the digits in list:-\n",
+        "list13 = [2,7,4,8,4]\n",
+        "sum = 0\n",
+        "for i in list13:\n",
+        "    sum = sum+i\n",
+        "print(sum)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "7c38114a",
+      "metadata": {
+        "id": "7c38114a",
+        "outputId": "8b6df591-f26d-4d02-9330-b2c8fe53504e"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "37800\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.14) Multiply of all numbers present in list:-\n",
+        "list14 = [3,8,5,1,7,9,5]\n",
+        "multiply = 1\n",
+        "for number in list14:\n",
+        "    multiply = multiply*number\n",
+        "print(multiply)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "832a1d83",
+      "metadata": {
+        "id": "832a1d83",
+        "outputId": "4c960b0d-3be7-45e7-c304-0c18efa17233"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "smallest number in list15 is= 8\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.15) Find the smalllest number in list.\n",
+        "list15 = [23,67,56,23,8,43,90]\n",
+        "smallnumber = min(list15)\n",
+        "print(\"smallest number in list15 is=\",smallnumber)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "ad7e7d73",
+      "metadata": {
+        "id": "ad7e7d73",
+        "outputId": "e2be76b4-43c4-4e53-9607-336126dd5b56"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "the largest number in list16 is= 90\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.16) Find the largest number in list.\n",
+        "list16 = [23,67,56,23,8,43,90]\n",
+        "largenumber = max(list16)\n",
+        "print(\"the largest number in list16 is=\",largenumber)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "b8f78d69",
+      "metadata": {
+        "id": "b8f78d69",
+        "outputId": "3a647f6e-d707-4396-8047-8eba5a012008"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "the second maximum number is= 78\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.17) Find the second maximum number in list:-\n",
+        "list17 = [34,77,34,78,45,34,89]\n",
+        "first_maximum_number = max(list17)\n",
+        "list17.remove(first_maximum_number)\n",
+        "second_max_number = max(list17)\n",
+        "print(\"the second maximum number is=\",second_max_number)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "96ad5d39",
+      "metadata": {
+        "id": "96ad5d39",
+        "outputId": "b6ff4f98-6359-45f8-8e64-ed33ba455959"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "even number= 54\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.18) Find the even number in the list.\n",
+        "list18 = [53,67,39,29,54]\n",
+        "for number1 in list18:\n",
+        "    if number1%2==0:\n",
+        "        print(\"even number=\",number1)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "b3f3614c",
+      "metadata": {
+        "id": "b3f3614c",
+        "outputId": "609b6ea9-b63f-4462-fcd5-8e323e3eb443"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "odd number= 69\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.19) Find the odd number in the list.\n",
+        "list19 = [78,44,68,32,69]\n",
+        "for number2 in list19:\n",
+        "    if number2%2!=0:\n",
+        "        print(\"odd number=\",number2)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "7044deb0",
+      "metadata": {
+        "id": "7044deb0",
+        "outputId": "328013ed-384d-4449-c599-1a959178734a"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter the start of range: 32\n",
+            "Enter the end of range: 89\n",
+            "32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 "
+          ]
+        }
+      ],
+      "source": [
+        "#Q.20) Python program to print Even Numbers in given range\n",
+        "start = int(input(\"Enter the start of range: \"))\n",
+        "end = int(input(\"Enter the end of range: \"))\n",
+        "for num in range(start, end + 1):\n",
+        "    if num % 2 == 0:\n",
+        "        print(num, end=\" \")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f74385d7",
+      "metadata": {
+        "id": "f74385d7",
+        "outputId": "387f5676-288d-4280-de0c-5532ed67fb7d"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter the start of range: 5\n",
+            "Enter the end of range: 9\n",
+            "5 7 9 "
+          ]
+        }
+      ],
+      "source": [
+        "#Q.21) Python program to print odd Numbers in given range.\n",
+        "start = int(input(\"Enter the start of range: \"))\n",
+        "end = int(input(\"Enter the end of range: \"))\n",
+        "for numb1 in range(start, end + 1):\n",
+        "    if numb1 % 2 != 0:\n",
+        "        print(numb1, end=\" \")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "dc946c96",
+      "metadata": {
+        "id": "dc946c96",
+        "outputId": "1ee571d9-6255-40bb-b12e-1cd8d68c2a57"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Even numbers: [78, 4, 34] Count: 3\n",
+            "Odd numbers: [23, 45, 89, 5, 67] Count: 5\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.22) Program to print the count of even and odd numbers in a list.\n",
+        "list22 = [23,78,45,89,4,34,5,67]\n",
+        "even = []\n",
+        "odd = []\n",
+        "def oddeven_count(numbers):\n",
+        "    even_count = 0\n",
+        "    odd_count = 0\n",
+        "    for num in numbers:\n",
+        "        if num % 2 == 0:\n",
+        "            even.append(num)\n",
+        "            even_count = even_count + 1\n",
+        "        else:\n",
+        "            odd.append(num)\n",
+        "            odd_count = odd_count + 1\n",
+        "\n",
+        "    return even_count, odd_count\n",
+        "even_count, odd_count = oddeven_count(list22)\n",
+        "print(\"Even numbers:\", even , \"Count:\", even_count)\n",
+        "print(\"Odd numbers:\" ,odd, \"Count:\" ,odd_count)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "9f264739",
+      "metadata": {
+        "id": "9f264739",
+        "outputId": "a60ce017-220e-442d-a7e9-cba7d69e7523"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Positive numbers in the list:  [45, 8, 2, 89]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.23) # Python program to print Positive Numbers in a List\n",
+        "list23 = [-3,45,8,2,89,-43]\n",
+        "positive_integers = []\n",
+        "for num23 in list23:\n",
+        "    if num23>=0:\n",
+        "        positive_integers.append(num23)\n",
+        "print(\"Positive numbers in the list: \",positive_integers)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "1b980388",
+      "metadata": {
+        "id": "1b980388",
+        "outputId": "cc7dea3f-3559-44e6-8f0f-ae0532c2e4eb"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "negetive numbers in the list:  [-3, -43]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.24) # Python program to print negetive Numbers in a List\n",
+        "list24 = [-3,45,8,2,89,-43]\n",
+        "negetive_integers = []\n",
+        "for num24 in list24:\n",
+        "    if num24<=0:\n",
+        "        negetive_integers.append(num24)\n",
+        "print(\"negetive numbers in the list: \",negetive_integers)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "a6ae6520",
+      "metadata": {
+        "id": "a6ae6520",
+        "outputId": "26758a4b-0365-4a83-ab40-ccb50399a677"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter the start of range: -4\n",
+            "Enter the end of range: 9\n",
+            "1 2 3 4 5 6 7 8 9 "
+          ]
+        }
+      ],
+      "source": [
+        "#Q.25) Python program to print all positive numbers in a range.\n",
+        "start = int(input(\"Enter the start of range: \"))\n",
+        "end = int(input(\"Enter the end of range: \"))\n",
+        "for number1 in range(start, end + 1):\n",
+        "    if number1 > 0:\n",
+        "        print(number1, end=\" \")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "95730a5b",
+      "metadata": {
+        "id": "95730a5b",
+        "outputId": "834e3573-8ba5-4b9b-a6f9-86bbc77d4999"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter the start of range: -5\n",
+            "Enter the end of range: 2\n",
+            "-5 -4 -3 -2 -1 "
+          ]
+        }
+      ],
+      "source": [
+        "#Q.26) Python program to print all negetive numbers in a range.\n",
+        "start = int(input(\"Enter the start of range: \"))\n",
+        "end = int(input(\"Enter the end of range: \"))\n",
+        "for number2 in range(start, end + 1):\n",
+        "    if number2 < 0:\n",
+        "        print(number2, end=\" \")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f34407ee",
+      "metadata": {
+        "id": "f34407ee",
+        "outputId": "5fbc7761-fe2f-4504-f3b2-02cd4f08e6d6"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "positive numbers in this list= 5\n",
+            "negetive numbers in this list= 2\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.27) Python program to count the positive and negetive numbers in a list.\n",
+        "list27 = [-5,3,8,5,2,6,-4]\n",
+        "positive_counter = 0\n",
+        "negetive_counter = 0\n",
+        "for numbers in list27:\n",
+        "    if numbers>0:\n",
+        "        positive_counter = positive_counter + 1\n",
+        "    elif numbers<0:\n",
+        "        negetive_counter = negetive_counter + 1\n",
+        "print(\"positive numbers in this list=\",positive_counter)\n",
+        "print(\"negetive numbers in this list=\",negetive_counter)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4cc4b208",
+      "metadata": {
+        "id": "4cc4b208",
+        "outputId": "f5184514-4b08-45ee-f154-c8e752deb705"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "New list after removing all even numbers:  [11, 5, 17, 23]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.28)Remove multiple elements from a list in python.\n",
+        "list28 = [11, 5, 17, 18, 23, 50]\n",
+        "for element1 in list1:\n",
+        "    if element1 % 2 == 0:\n",
+        "        list1.remove(element1)\n",
+        "print(\"New list after removing all even numbers: \", list1)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4280c0c3",
+      "metadata": {
+        "id": "4280c0c3",
+        "outputId": "333d359d-1bcb-4207-d737-850c7b5c5306"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[('bhati', 'varun'), ('', 'virat', '18', '4'), ('nakul', 'khushi', '45'), ('', '')]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.29) Python program to remove empty tuples from a list of tuples function to remove empty tuples\n",
+        "tuples = [(),('bhati', 'varun'), ('', 'virat','18', '4'), (),('nakul', 'khushi', '45'), ('', ''), ()]\n",
+        "def Remove(tuples):\n",
+        "    for i in tuples:\n",
+        "        if(len(i) == 0):\n",
+        "            tuples.remove(i)\n",
+        "    return tuples\n",
+        "print(Remove(tuples))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "0ce14947",
+      "metadata": {
+        "id": "0ce14947",
+        "outputId": "123045e8-1670-4647-987f-fd4b9e583102"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[4]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Q.30) Python program to print duplicates from a list of integers.\n",
+        "integers = [1,6,4,2,8,4,9,3]\n",
+        "duplicates_integers =[]\n",
+        "def duplicates(integers):\n",
+        "    for i in integers:\n",
+        "        if integers.count(i)>1 and i not in duplicates_integers:\n",
+        "            duplicates_integers.append(i)\n",
+        "    return duplicates_integers\n",
+        "duplicates(integers)\n",
+        "print(duplicates_integers)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "627f1d2d",
+      "metadata": {
+        "id": "627f1d2d"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "33539df8",
+      "metadata": {
+        "id": "33539df8"
+      },
+      "outputs": [],
+      "source": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3 (ipykernel)",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.11.4"
+    },
+    "colab": {
+      "provenance": []
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
